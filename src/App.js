@@ -1,38 +1,15 @@
 import React from "react";
+import Header from "./components/header";
+import Profile from "./components/profile";
+import Profile from "./components/profile";
 
 const App = () => {
   return (
     <div className="container">
       {/* Bagian Header dengan Foto Profil */}
-      <header>
-        <img
-          src="images/avril.png"
-          alt="Foto Profil"
-          className="profile-picture"
-        />
-        <h1>Nama Anda</h1>
-        <p>Posisi / Profesi Anda</p>
-        <div className="contact-info">
-          <p>Email: namaanda@example.com</p>
-          <p>Telepon: +62 812 3456 7890</p>
-          <p>Alamat: Jl. Contoh No.123, Kota Anda</p>
-          <div className="social-media">
-            <a href="https://linkedin.com">LinkedIn</a> |
-            <a href="https://github.com">GitHub</a> |
-            <a href="https://twitter.com">Twitter</a>
-          </div>
-        </div>
-      </header>
+      <Header />
       {/* Profil Pribadi */}
-      <section className="profile">
-        <h2>Profil</h2>
-        <p>
-          Saya adalah seorang profesional yang berpengalaman dalam bidang{" "}
-          <b>[bidang spesialisasi]</b> dengan keahlian di{" "}
-          <b>[keahlian utama]</b>. Saya memiliki pengalaman dalam mengelola
-          proyek besar dan berkolaborasi dengan tim lintas departemen.
-        </p>
-      </section>
+      <Profile />
       {/* Pengalaman Kerja */}
       <section className="experience">
         <h2>Pengalaman Kerja</h2>
