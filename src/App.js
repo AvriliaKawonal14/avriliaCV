@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/header";
+import Profile from "./components/profile";
+import Experience from "./components/experience";
+import Education from "./components/education";
+import Skills from "./components/skills";
+import Projects from "./components/projects";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {/* Bagian Header dengan Foto Profil */}
+      <Header />
+      {/* Profil Pribadi */}
+      <Profile />
+      {/* Pengalaman Kerja */}
+      <Experience />
+      {/* Pendidikan */}
+      <Education />
+      {/* Keahlian */}
+      <Skills />
+      {/* Proyek */}
+      <Projects />
+      {/* Footer */}
+      <footer>
+        <p>© 2024  Avrilia Irena Kawonal</p>
+      </footer>
     </div>
   );
-}
+};
 
 export default App;
