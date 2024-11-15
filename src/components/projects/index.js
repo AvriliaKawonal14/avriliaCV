@@ -28,6 +28,19 @@ const projects = () => {
           secara real-time, yang membantu perusahaan mengoptimalkan stok dan mengurangi biaya operasional.
         </p>
       </div>
+      <div className="project">
+        <img 
+          src="images/dbms.png" 
+          alt="Sistem Monitoring Inventaris" 
+          className="project-image" 
+        />
+        <h3>Sistem Monitoring Inventaris</h3>
+        <span>2020</span>
+        <p>
+          Merancang dan mengimplementasikan sistem untuk memantau inventaris gudang 
+          secara real-time, yang membantu perusahaan mengoptimalkan stok dan mengurangi biaya operasional.
+        </p>
+      </div>
     </section>
     
     )
