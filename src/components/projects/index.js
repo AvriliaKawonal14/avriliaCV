@@ -4,7 +4,7 @@ const projects = () => {
       <h2>Proyek</h2>
       <div className="project">
         <img 
-          src="images/avril.png" 
+          src="images/webdesign.png" 
           alt="Aplikasi Manajemen Tugas" 
           className="project-image" 
         />
@@ -17,7 +17,7 @@ const projects = () => {
       </div>
       <div className="project">
         <img 
-          src="images/avril.png" 
+          src="images/dbms.png" 
           alt="Sistem Monitoring Inventaris" 
           className="project-image" 
         />

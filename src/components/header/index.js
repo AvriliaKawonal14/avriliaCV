@@ -2,7 +2,7 @@ const header = () => {
   return (
     <header>
       <img
-        src="images/avril.png"
+        src="images/avril.jpg"
         alt="Foto Profil"
         className="profile-picture"
       />
