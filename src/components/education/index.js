@@ -1,7 +1,20 @@
-const education = () => {
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
+
+const Education = () => {
+  const [education, setEducation] = useState([]);
+  useEffect(() => {
+    const db = getDatabase();
+    const educationRef = ref(db, "Education");
+    onValue(educationRef, (snapshot) => {
+      const data = snapshot.val();
+      setEducation(data);
+    });
+  }, []);
   return (
     <section className="education">
-      <h2>Pendidikan</h2>
+      <h2>{education.pdd}</h2>
       <div className="education-item">
         <h3>Universitas Klabat - S1</h3>
         <span>2022 - 2024</span>
@@ -25,16 +38,12 @@ const education = () => {
           Menjalani pendidikan menengah pertama dengan fokus pada pembentukan
           karakter dan pengetahuan umum sebagai dasar untuk pendidikan lanjutan.
         </p>
-        <h3>SD Katolik Santa Anna 1 Bitung</h3>
-        <span>2011 - 2017</span>
-        <p>
-          Mengawali pendidikan dasar di institusi yang menekankan pada
-          nilai-nilai akademik dan etika, sebagai pondasi awal pengembangan
-          pribadi dan intelektual.
-        </p>
+        <h3>{education.sd}</h3>
+        <span>{education.thn}</span>
+        <p>{education.ketsd}</p>
       </div>
     </section>
   );
 };
 
-export default education;
+export default Education;
