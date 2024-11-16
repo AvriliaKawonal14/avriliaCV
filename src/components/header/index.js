@@ -6,12 +6,12 @@ const header = () => {
         alt="Foto Profil"
         className="profile-picture"
       />
-      <h1>Nama Anda</h1>
-      <p>Posisi / Profesi Anda</p>
+      <h1>Avrilia Irena Kawonal</h1>
+      <p>Mahasiswa Semester 5 - Informatika</p>
       <div className="contact-info">
-        <p>Email: namaanda@example.com</p>
-        <p>Telepon: +62 812 3456 7890</p>
-        <p>Alamat: Jl. Contoh No.123, Kota Anda</p>
+        <p>Email: akawonal@gmail.com</p>
+        <p>Telepon: +62 895395375616</p>
+        <p>Alamat: Jl. Samratulangi, Bitung</p>
         <div className="social-media">
           <a href="https://linkedin.com">LinkedIn</a> |
           <a href="https://github.com">GitHub</a> |

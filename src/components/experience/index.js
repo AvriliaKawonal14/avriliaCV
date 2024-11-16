@@ -1,7 +1,7 @@
 const experience = () => {
     return (
         <section className="experience">
-        <h2>Pengalaman Kerja</h2>
+        <h2>Pengalaman</h2>
         <div className="job">
           <h3>PT Contoh Teknologi - Software Engineer</h3>
           <span>2020 - Sekarang</span>

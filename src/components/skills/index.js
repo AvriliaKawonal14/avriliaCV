@@ -3,10 +3,12 @@ const skills = () => {
         <section className="skills">
         <h2>Keahlian</h2>
         <ul>
-          <li>Pengembangan Web: HTML, CSS, JavaScript, React</li>
-          <li>Database: MySQL, MongoDB</li>
-          <li>Version Control: Git, GitHub</li>
-          <li>Soft Skills: Komunikasi, Manajemen Waktu, Problem Solving</li>
+          <li>HTML, CSS, JavaScript, React, Phyton, C++, C#</li>
+          <li>Database: MySQL</li>
+          <li>Soft Skills: Manajemen Waktu, Problem Solving</li>
+          <li>Blender</li>
+          <li>Unity</li>
+          <li>Figma</li>
         </ul>
       </section>
     )
