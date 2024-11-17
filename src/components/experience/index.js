@@ -1,7 +1,19 @@
-const experience = () => {
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
+const Experience = () => {
+  const [Experience, setExperience] = useState([]);
+  useEffect(() => {
+    const db = getDatabase();
+    const experienceRef = ref(db, "Experience");
+    onValue(experienceRef, (snapshot) => {
+      const data = snapshot.val();
+      setExperience(data);
+    });
+  }, []);
     return (
         <section className="experience">
-        <h2>Pengalaman</h2>
+        <h2>{Experience.title}</h2>
         <div className="job">
           <h3>PT Contoh Teknologi - Software Engineer</h3>
           <span>2020 - Sekarang</span>
@@ -24,4 +36,4 @@ const experience = () => {
     )
 }
 
-export default experience;
+export default Experience;
