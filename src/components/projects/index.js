@@ -1,19 +1,28 @@
-const projects = () => {
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
+const Projects = () => {
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    const db = getDatabase();
+    const projectsRef = ref(db, "Projects");
+    onValue(projectsRef, (snapshot) => {
+      const data = snapshot.val();
+      setProjects(data);
+    });
+  }, []);
     return (
       <section className="projects">
-      <h2>Project</h2>
+      <h2>{projects.jdl}</h2>
       <div className="project">
         <img 
           src="images/dbms.png" 
           alt="Sistem Monitoring Inventaris" 
           className="project-image" 
         />
-        <h3>Sistem Pengololaan Bisnis Kayu Kelapa</h3>
-        <span>2024</span>
-        <p>
-          Merancang dan mengimplementasikan sistem untuk memantau inventaris gudang 
-          secara real-time, yang membantu perusahaan mengoptimalkan stok dan mengurangi biaya operasional.
-        </p>
+        <h3>{projects.tit1}</h3>
+        <span>{projects.thntit1}</span>
+        <p>{projects.ket1}</p>
       </div>
       <div className="project">
         <img 
@@ -21,12 +30,9 @@ const projects = () => {
           alt="Sistem Monitoring Inventaris" 
           className="project-image" 
         />
-        <h3>Sistem Management Inventory Obat - Puskesmas Kauditan</h3>
-        <span>2024</span>
-        <p>
-          Merancang dan mengimplementasikan sistem untuk memantau inventaris gudang 
-          secara real-time, yang membantu perusahaan mengoptimalkan stok dan mengurangi biaya operasional.
-        </p>
+        <h3>{projects.tit2}</h3>
+        <span>{projects.thn2}</span>
+        <p>{projects.ket2}</p>
       </div>
       <div className="project">
         <img 
@@ -34,12 +40,9 @@ const projects = () => {
           alt="Aplikasi Manajemen Tugas" 
           className="project-image" 
         />
-        <h3>Desain Dashboard Rumah Makan</h3>
-        <span>2023</span>
-        <p>
-          Membangun aplikasi manajemen tugas dengan fitur-fitur seperti to-do list, 
-          reminder, dan pencatatan waktu. Aplikasi ini digunakan oleh 500+ pengguna aktif.
-        </p>
+        <h3>{projects.tit3}</h3>
+        <span>{projects.thn3}</span>
+        <p>{projects.ket3}</p>
       </div>
       <div className="project">
         <img 
@@ -47,17 +50,14 @@ const projects = () => {
           alt="Sistem Monitoring Inventaris" 
           className="project-image" 
         />
-        <h3>Project Robotic</h3>
-        <span>2024</span>
-        <p>
-          Merancang dan mengimplementasikan sistem untuk memantau inventaris gudang 
-          secara real-time, yang membantu perusahaan mengoptimalkan stok dan mengurangi biaya operasional.
-        </p>
+        <h3>{projects.tit4}</h3>
+        <span>{projects.thn4}</span>
+        <p>{projects.ket4}</p>
       </div>
     </section>
     
     )
 }
 
-export default projects;
+export default Projects;
 
