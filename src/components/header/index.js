@@ -25,9 +25,9 @@ const Header = () => {
         <p>{header.telp}</p>
         <p>{header.almt}</p>
         <div className="social-media">
-          <a href="https://linkedin.com">{header.link}</a> |
-          <a href="https://github.com">{header.git}</a> |
-          <a href="https://twitter.com">{header.ig}</a>
+          <a href="https://www.linkedin.com/in/avrilia-kawonal-b110452b2/">{header.link}</a> |
+          <a href="https://github.com/AvriliaKawonal14">{header.git}</a> |
+          <a href="https://www.instagram.com/irenakawonal_/?igsh=NnNkNXl0eDdycTU3">{header.ig}</a>
         </div>
       </div>
     </header>
