@@ -22,7 +22,6 @@ const Projects = () => {
         />
         <h3>{projects.tit1}</h3>
         <span>{projects.thntit1}</span>
-        <p>{projects.ket1}</p>
       </div>
       <div className="project">
         <img
@@ -32,7 +31,6 @@ const Projects = () => {
         />
         <h3>{projects.tit2}</h3>
         <span>{projects.thn2}</span>
-        <p>{projects.ket2}</p>
       </div>
       <div className="project">
         <img
@@ -42,7 +40,6 @@ const Projects = () => {
         />
         <h3>{projects.tit3}</h3>
         <span>{projects.thn3}</span>
-        <p>{projects.ket3}</p>
       </div>
       <div className="project">
         <img
@@ -52,7 +49,6 @@ const Projects = () => {
         />
         <h3>{projects.tit4}</h3>
         <span>{projects.thn4}</span>
-        <p>{projects.ket4}</p>
       </div>
     </section>
   );
