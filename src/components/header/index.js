@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header>
       <img
-        src="images/avril.jpg"
+        src={`data:image/jpeg;base64,${header.foto}`}
         alt="Foto Profil"
         className="profile-picture"
       />
