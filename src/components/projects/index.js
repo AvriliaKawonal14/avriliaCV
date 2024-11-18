@@ -16,7 +16,7 @@ const Projects = () => {
       <h2>{projects.jdl}</h2>
       <div className="project">
         <img
-          src="images/dbms.png"
+          src={`data:image/jpeg;base64,${projects.ftobisnis}`}
           alt="Sistem Monitoring Inventaris"
           className="project-image"
         />
@@ -25,7 +25,7 @@ const Projects = () => {
       </div>
       <div className="project">
         <img
-          src="images/dbms.png"
+          src={`data:image/jpeg;base64,${projects.ftopuskes}`}
           alt="Sistem Monitoring Inventaris"
           className="project-image"
         />
@@ -34,7 +34,7 @@ const Projects = () => {
       </div>
       <div className="project">
         <img
-          src="images/webdesign.png"
+          src={`data:image/jpeg;base64,${projects.ftodash}`}
           alt="Aplikasi Manajemen Tugas"
           className="project-image"
         />
@@ -43,7 +43,7 @@ const Projects = () => {
       </div>
       <div className="project">
         <img
-          src="images/Robotic.jpg"
+          src={`data:image/jpeg;base64,${projects.ftorobotic}`}
           alt="Sistem Monitoring Inventaris"
           className="project-image"
         />
